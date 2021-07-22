@@ -12,13 +12,32 @@
       src="https://kit.fontawesome.com/ad7f215142.js"
       crossorigin="anonymous"
     ></script>
+    <!-- CSS -->
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Playfair Display", Georgia, "Times New Roman",
+          serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 2.5rem;
+      }
+      h2{
+        font-weight: 600;
+      }
+    </style>
   </head>
   <body>
     <section class="container">
       <nav class="fs-5 py-2 border-bottom">
         <div class="d-flex justify-content-between align-items-center">
           <a class="p-2 link-secondary" href="">Subscribe</a>
-          <a class="fs-1 fw-bolder text-dark" href="">Large</a>
+          <a class="fs-1 fw-bolder fst-italic text-dark" href="">Large</a>
           <div class="d-flex align-items-center">
             <i class="fas fa-search p-2 link-secondary me-3"></i>
             <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -27,7 +46,7 @@
           </div>
         </div>
       </nav>
-      <nav>
+      <nav class="my-3">
         <div class="d-flex justify-content-between fs-5">
           <a class="p-2 link-secondary" href="">World</a>
           <a class="p-2 link-secondary" href="">U.S</a>
@@ -45,7 +64,7 @@
     </section>
 
     <main class="container">
-      <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+      <div class="p-4 p-md-5 text-white rounded bg-dark mb-4">
         <div class="col-6">
           <h1 class="fst-italic">Title of a longer featured blog post</h1>
           <p class="lead my-3">
@@ -58,7 +77,240 @@
           </p>
         </div>
       </div>
+      <!-- Card -->
+      <div class="">
+        <div class="d-flex g-0 mt-3 justify-content-between">
+          <div class="row g-0 me-4 border border-1">
+            <div class="col-md-8 p-4">
+              <h3>World</h3>
+              <h1>Featured Post</h1>
+              <p class="text-muted">Nov-12</p>
+              <p>
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+              <a href="">Continue reading...</a>
+            </div>
+            <div class="col-md-4 bg-secondary">
+              <img
+                src=""
+                class="img-fluid rounded-start"
+                alt="thumbline image"
+              />
+            </div>
+          </div>
+          <div class="row g-0 border border-1">
+            <div class="col-md-8 p-4">
+              <h3>World</h3>
+              <h1>Featured Post</h1>
+              <p class="text-muted">Nov-12</p>
+              <p>
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+              <a href="">Continue reading...</a>
+            </div>
+            <div class="col-md-4 bg-secondary">
+              <img
+                src=""
+                class="img-fluid rounded-start"
+                alt="thumbline image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+    <!-- Article -->
+    <article class="container mt-5">
+      <div class="row g-5">
+        <div class="col-lg-8">
+          <h1 class="fst-italic border-bottom pb-4">From the Firehose</h1>
+          <article class="mt-3">
+            <h1 class="">Sample blog post</h1>
+            <p class="text-muted">January 1, 2021 by <a href="">Mark</a></p>
+            <p class="border-bottom pb-4">
+              This blog post shows a few different types of content that’s
+              supported and styled with Bootstrap. Basic typography, lists,
+              tables, images, code, and more are all supported as expected.
+            </p>
+            <p>
+              This is some additional paragraph placeholder content. It has been
+              written to fill the available space and show how a longer snippet
+              of text affects the surrounding content. We'll repeat it often to
+              keep the demonstration flowing, so be on the lookout for this
+              exact same string of text.
+            </p>
+
+            <h1>Blockquotes</h1>
+            <p>This is an example blockquote in action:</p>
+            <p class="display-6">Quoted text goes here.</p>
+            <p>
+              This is some additional paragraph placeholder content. It has been
+              written to fill the available space and show how a longer snippet
+              of text affects the surrounding content. We'll repeat it often to
+              keep the demonstration flowing, so be on the lookout for this
+              exact same string of text.
+            </p>
+            <h1>Example lists</h1>
+            <p>
+              This is some additional paragraph placeholder content. It's a
+              slightly shorter version of the other highly repetitive body text
+              used throughout. This is an example unordered list:
+            </p>
+            <ul>
+              <li>First list item</li>
+              <li>Second list item with a longer description</li>
+              <li>Third list item to close it out</li>
+            </ul>
+            <p>
+              And this is an ordered list:
+            </p>
+            <ul>
+              <ol>First list item</ol>
+              <ol>Second list item with a longer description</ol>
+              <ol>Third list item to close it out</ol>
+            </ul>
+            <p>And this is a definiton list:</p>
+            <h5>HyperText Markup Language (HTML)</h5>
+            <p>The language used to describe and define the content of a Web page</p>
+            <h5>Cascading Style Sheets (CSS)</h5>
+            <p>Used to describe the appearance of Web content</p>
+            <h5>JavaScript (JS)</h5>
+            <p>The programming language used to build advanced Web sites and applications</p>
+            <h1>
+              Inline HTML elements
+            </h1>
+            <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="">Mozilla Developer Network.</a></p>
+            <ul>
+              <li><em>To italicize text, use.</em></li>
+              <li><strong>To bold text,</strong> use</li>
+              <li>
+                Abbreviations, like <abbr title="Hyper text merkap language">HTML</abbr> should use <abbr>, with an optional
+              </li>
+              <li>
+                Citations, like — Mark Otto, should use<cite>cite</cite>.
+              </li>
+              <li>
+                <del>Deleted</del> text should use and <ins>inserted</ins> text should use <ins>.
+              </li>
+              <li>Superscript <sub>text</sub> uses  and subscript <sup>text</sup> uses <sub>.</li>
+             
+            </ul>
+            <p>
+              Most of these elements are styled by browsers with few modifications on our part.
+            </p>
+            <h1>Heading</h1>
+            <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+            <h2>Sub-heading</h2>
+            <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+            <p class="display-7">Example code block</p>
+            <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+            <h1>Another blog post</h1>
+            <p class="text-muted">December 23, 2020 by <a href="">jacob</a></p>
+
+            <p>
+              This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text. 
+              <br>
+              <br>
+              Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.
+              <br>
+              This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same
+            </p>
+            <h2>
+              Example table
+            </h2>
+            <p>and don't forget about tables is these posts:</p>
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Upvotes</th>
+                  <th scope="col">Downvotes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mark</td>
+                  <td>10</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>bob</td>
+                  <td>19</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>charlie</td>
+                  <td>7</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>Totals</td>
+                  <td>21</td>
+                  <td>23</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+
+            <h1 class="mt-3">New feature</h1>
+            <p class="text-muted">December 14, 2020 by <a href="">Chris</a></p>
+
+            <p>
+              This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.
+            </p>
+            <ul>
+              <li>First list item</li>
+              <li>Second list item with a longer description</li>
+              <li>Third list item to close it out</li>
+            </ul>
+            <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+
+            <div>
+              <button type="button" class="btn btn-outline-primary rounded-pill">Primary</button>
+              <button type="button" class="btn btn-outline-secondary  disabled rounded-pill">Primary</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-4 ">
+          <div class="position-sticky" style="top: 2rem;">
+            <h2>About</h2>
+          <p>Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
+          <h2>Archives</h2>
+          <ol>
+            <li><a href="">March 2021</a></li>
+            <li><a href="">February 2021</a></li>
+            <li><a href="">January 2021</a></li>
+            <li><a href="">December 2020</a></li>
+            <li><a href="">November 2020</a></li>
+            <li><a href="">October 2020</a></li>
+            <li><a href="">September 2020</a></li>
+            <li><a href="">August 2020</a></li>
+            <li><a href="">July 2020</a></li>
+            <li><a href="">June 2020</a></li>
+            <li><a href="">May 2020</a></li>
+            <li><a href="">April 2020</a></li>
+          </ol>
+          <h2>Elsewhere</h2>
+          <ol>
+            <li><a href=""></a>GitHub</li>
+            <li><a href=""></a>Twitter</li>
+            <li><a href=""></a>Facebook</li>
+          </ol>
+          </div>
+        </div>
+      </div>
+    </article>
 
     <!-- javaScript -->
     <script src="js/bootstrap.bundle.min.js"></script>
